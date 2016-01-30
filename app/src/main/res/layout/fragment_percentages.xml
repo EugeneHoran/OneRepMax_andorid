@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        android:id="@+id/percentageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="16dp"
+            android:text="@string/enter_one_rep_max"
+            android:textColor="@color/black700"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:hint="@string/orm"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black900"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listPercentages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/percentageHolder"
+        android:clipToPadding="false"
+        android:paddingBottom="88dp"
+        android:scrollbars="none" />
+</RelativeLayout>

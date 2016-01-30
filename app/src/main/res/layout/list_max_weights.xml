@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listHolder"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:minHeight="48dp"
+    android:orientation="horizontal"
+    tools:ignore="UnusedAttribute,RtlHardcoded,RtlSymmetry">
+
+    <TextView
+        android:id="@+id/textMaxReps"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical|right"
+        android:paddingRight="16dp"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width=".5dp"
+        android:layout_height="48dp"
+        android:background="#BDBDBD" />
+
+    <TextView
+        android:id="@+id/textWeight"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width=".5dp"
+        android:layout_height="48dp"
+        android:background="#BDBDBD" />
+
+    <TextView
+        android:id="@+id/textMaxPercentage"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="16dp"
+        android:textSize="16sp" />
+</LinearLayout>
